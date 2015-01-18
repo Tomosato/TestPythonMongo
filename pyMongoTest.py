@@ -1,6 +1,9 @@
 import pymongo
 
-client = pymongo.MongoClient("192.168.56.11", 27017)
+
+hostName = "192.168.56.11"
+portNumber = 27017
+client = pymongo.MongoClient(hostName, portNumber)
 
 db = client.testPyMongo
 
